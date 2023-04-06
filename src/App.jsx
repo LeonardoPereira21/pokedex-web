@@ -1,4 +1,4 @@
-import pokedexLogo from './assets/PokedexLogo.png'
+import pokedexLogo from '@/assets/PokedexLogo.png'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App ">
       <div className='container'>
-        <a href="https://reactjs.org">
+        <a href="/list">
           <img src={pokedexLogo} className="pokedex" alt="pokedex" />
         </a>
       
