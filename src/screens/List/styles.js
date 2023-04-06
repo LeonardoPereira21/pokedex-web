@@ -9,10 +9,9 @@ export const ListContainer = styled.div`
 `;
 
 export const ListContent = styled.div`
-display: flex;
+  display: flex;
 `;
 
 export const ListTitle = styled.h1`
-
-text-align: center;
-`
+  text-align: center;
+`;

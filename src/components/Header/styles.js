@@ -15,5 +15,3 @@ export const HeaderContent = styled.div`
   justify-content: center;
   align-items: center;
 `;
-
-

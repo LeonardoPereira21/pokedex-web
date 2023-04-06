@@ -7,15 +7,13 @@ export function List() {
     <>
       <Header />
       <ListContainer>
-      <ListTitle>Lista</ListTitle>
+        <ListTitle>Lista</ListTitle>
         <ListContent>
-         
           <Card />
           <Card />
           <Card />
           <Card />
           <Card />
-        
         </ListContent>
       </ListContainer>
     </>
