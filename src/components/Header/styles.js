@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  background: ${(props) => props.theme["blue"]};
+  background: transparent;
   padding: 1rem;
 `;
 
@@ -15,3 +15,5 @@ export const HeaderContent = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+
