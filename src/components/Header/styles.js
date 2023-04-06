@@ -1,9 +1,9 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  background: ${(props) => props.theme['blue']};
-  padding: 1rem ;
-`
+  background: ${(props) => props.theme["blue"]};
+  padding: 1rem;
+`;
 
 export const HeaderContent = styled.div`
   width: 100%;
@@ -14,4 +14,4 @@ export const HeaderContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;

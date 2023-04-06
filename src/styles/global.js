@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -11,10 +11,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
      background-image: url('src/assets/poke-background.jpg');
-    color: ${(props) => props.theme['black']};
+    color: ${(props) => props.theme["black"]};
     -webkit-font-smoothing: antialiased;
   }
   body, input, textarea, button {
     font: 400 1rem Roboto, sans-serif;
   }
-`
+`;
