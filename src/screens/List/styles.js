@@ -10,8 +10,11 @@ export const ListContainer = styled.div`
 
 export const ListContent = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 export const ListTitle = styled.h1`
   text-align: center;
+  color: ${(props) => props.theme["blue"]};
 `;
