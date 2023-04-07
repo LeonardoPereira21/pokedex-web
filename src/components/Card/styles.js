@@ -24,4 +24,4 @@ export const PokemonName = styled.span`
   margin-top: 20px;
 `;
 
-export const PokemonNumber = styled.p``;
+export const Checkbox = styled.input.attrs({ type: "checkbox" })``;
