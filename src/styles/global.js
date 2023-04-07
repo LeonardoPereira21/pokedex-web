@@ -11,6 +11,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
      background-image: url('src/assets/poke-background.jpg');
+     background-repeat: no-repeat;
+     background-attachment: fixed;
     color: ${(props) => props.theme["black"]};
     -webkit-font-smoothing: antialiased;
   }
