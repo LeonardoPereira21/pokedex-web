@@ -6,6 +6,9 @@ import { defaultTheme } from "./styles/themes/default";
 import { ThemeProvider } from "styled-components";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { List } from "./screens/List";
+import { Provider } from "react-redux";
+import { persistor, store } from "./redux";
+import { PersistGate } from "redux-persist/integration/react";
 
 const router = createBrowserRouter([
   {
@@ -19,8 +22,12 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <ThemeProvider theme={defaultTheme}>
-    <GlobalStyle />
-    <RouterProvider router={router} />
-  </ThemeProvider>
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+    <ThemeProvider theme={defaultTheme}>
+      <GlobalStyle />
+      <RouterProvider router={router} />
+    </ThemeProvider>
+    </PersistGate>
+  </Provider>
 );
