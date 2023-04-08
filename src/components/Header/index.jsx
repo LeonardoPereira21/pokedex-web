@@ -6,7 +6,7 @@ function Header() {
     <HeaderContainer>
       <HeaderContent>
         <a href="/">
-          <img src={pokedexLogo} alt="" width={150} />
+          <img src={pokedexLogo} alt="Pokedex Logo" width={150} />
         </a>
       </HeaderContent>
     </HeaderContainer>
