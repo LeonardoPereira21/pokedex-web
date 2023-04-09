@@ -24,10 +24,10 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-    <ThemeProvider theme={defaultTheme}>
-      <GlobalStyle />
-      <RouterProvider router={router} />
-    </ThemeProvider>
+      <ThemeProvider theme={defaultTheme}>
+        <GlobalStyle />
+        <RouterProvider router={router} />
+      </ThemeProvider>
     </PersistGate>
   </Provider>
 );

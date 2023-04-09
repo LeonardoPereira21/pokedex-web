@@ -24,7 +24,7 @@ export const pokemonSlice = createSlice({
       if (pokemon) {
         favorites = favorites.filter((item) => item !== payload);
       } else {
-       favorites = [...favorites, payload]
+        favorites = [...favorites, payload];
       }
       return { ...state, favorites };
     },

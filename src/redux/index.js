@@ -16,7 +16,7 @@ const combinedReducers = combineReducers({
 const persistConfig = {
   key: "root",
   storage,
-  blacklist: ["pokemon"]
+  blacklist: ["pokemon"],
 };
 
 const persistedReducer = persistReducer(persistConfig, combinedReducers);

@@ -21,5 +21,4 @@ describe("App", () => {
     );
     expect(getByAltText(/pokedex/i)).toBeInTheDocument();
   });
-
 });
