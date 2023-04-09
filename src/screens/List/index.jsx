@@ -1,9 +1,10 @@
-import { Header, Card } from "@components";
+import Header from "../../components/Header"
+import Card from "../../components/Card"
 import { ListContainer, ListContent, ListTitle } from "./styles";
 import { useEffect, useRef, useState } from "react";
-import { api } from "@/lib/axios";
+import { api } from "../../lib/axios";
 import { useDispatch, useSelector } from "react-redux";
-import { setData, setNext } from "@/redux/pokemon/slice";
+import { setData, setNext } from "../../redux/pokemon/slice";
 
 export function List() {
   const dispatch = useDispatch();

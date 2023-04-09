@@ -38,7 +38,7 @@ describe("Card component", () => {
       </Provider>
     );
 
-    fireEvent.click(getByLabelText(/favorito?/));
+    fireEvent.click(getByLabelText(/Favorito?/));
 
     expect(store.dispatch).toHaveBeenCalledWith(setFavorites(name));
   });
@@ -56,6 +56,6 @@ describe("Card component", () => {
       </Provider>
     );
 
-    expect(getByLabelText(/favorito?/)).toBeChecked();
+    expect(getByLabelText(/Favorito?/)).toBeChecked();
   });
 });

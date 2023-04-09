@@ -1,5 +1,11 @@
 import { forwardRef } from "react";
-import { CardContainer, CardContent, Checkbox, PokemonName } from "./styles";
+import {
+  CardContainer,
+  CardContent,
+  Checkbox,
+  PokemonName,
+  Favorite,
+} from "./styles";
 import { useDispatch, useSelector } from "react-redux";
 import { setFavorites } from "../../redux/pokemon/slice";
 
@@ -17,15 +23,14 @@ const Card = forwardRef(({ name }, ref) => {
           height={200}
         />
         <PokemonName>{name}</PokemonName>
-        <label>
-          favorito?
-        <Checkbox
-          checked={favorites.find((item) => item === name)}
-          value={favorites.find((item) => item === name)}
-          onChange={() => dispatch(setFavorites(name))}
-          
-        />
-        </label>
+        <Favorite>
+          Favorito?
+          <Checkbox
+            checked={favorites.find((item) => item === name)}
+            value={favorites.find((item) => item === name)}
+            onChange={() => dispatch(setFavorites(name))}
+          />
+        </Favorite>
       </CardContent>
     </CardContainer>
   );

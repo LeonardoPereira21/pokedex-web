@@ -22,6 +22,16 @@ export const CardContent = styled.div`
 
 export const PokemonName = styled.span`
   margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
 `;
 
-export const Checkbox = styled.input.attrs({ type: "checkbox" })``;
+export const Checkbox = styled.input.attrs({ type: "checkbox" })`
+  margin-left: 10px;
+`;
+
+export const Favorite = styled.label`
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+`;
