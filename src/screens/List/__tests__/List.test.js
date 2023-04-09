@@ -2,8 +2,6 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { List } from "../index";
 import configureStore from "redux-mock-store";
-import { setData, setNext } from "../../../redux/pokemon/slice";
-import { api } from "../../../lib/axios";
 
 const mockStore = configureStore([]);
 
