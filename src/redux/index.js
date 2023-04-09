@@ -2,7 +2,6 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { pokemonSlice } from "./pokemon/slice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from "redux-persist";
-import autoMergeLevel2 from "redux-persist/es/stateReconciler/autoMergeLevel2";
 
 const pokemonPersistedConfig = {
   key: "pokemon",
@@ -17,7 +16,6 @@ const combinedReducers = combineReducers({
 const persistConfig = {
   key: "root",
   storage,
-  stateReconcilier: autoMergeLevel2,
   blacklist: ["pokemon"]
 };
 
