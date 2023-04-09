@@ -12,7 +12,7 @@ import { setFavorites } from "../../redux/pokemon/slice";
 const Card = forwardRef(({ name }, ref) => {
   const dispatch = useDispatch();
   const { favorites } = useSelector((store) => store.pokemon);
-
+   const isChecked = favorites && favorites.length > 0 && favorites.find((item) => item === name)
   return (
     <CardContainer ref={ref}>
       <CardContent>
@@ -26,8 +26,8 @@ const Card = forwardRef(({ name }, ref) => {
         <Favorite>
           Favorito?
           <Checkbox
-            checked={favorites.find((item) => item === name)}
-            value={favorites.find((item) => item === name)}
+            checked={isChecked}
+            value={isChecked}
             onChange={() => dispatch(setFavorites(name))}
           />
         </Favorite>
