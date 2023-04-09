@@ -8,3 +8,9 @@
 .pokedex:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
+h1,h2 {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
