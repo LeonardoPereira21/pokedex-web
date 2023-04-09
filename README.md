@@ -15,6 +15,8 @@ Necesários para execução.
 
 ### `yarn dev`
 
+Para rodar o projeto
+
 ### `yarn build`
 
 Realiza o build e executa o projeto.
