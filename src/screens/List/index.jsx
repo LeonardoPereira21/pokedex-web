@@ -1,5 +1,5 @@
-import Header from "../../components/Header"
-import Card from "../../components/Card"
+import Header from "../../components/Header";
+import Card from "../../components/Card";
 import { ListContainer, ListContent, ListTitle } from "./styles";
 import { useEffect, useRef, useState } from "react";
 import { api } from "../../lib/axios";
@@ -10,6 +10,7 @@ export function List() {
   const dispatch = useDispatch();
   const ref = useRef();
   const [loading, setLoading] = useState(false);
+
   const { data, next } = useSelector((store) => store.pokemon);
 
   const fetchList = async () => {
@@ -47,13 +48,16 @@ export function List() {
       <ListContainer>
         <ListTitle>Lista</ListTitle>
         <ListContent>
-          {data.map((pokemon, index) => (
-            <Card
-              name={pokemon.name}
-              order={pokemon.order}
-              {...(index === data.length - 1 ? { ref } : {})}
-            />
-          ))}
+          {data && data.length > 0 ? (
+            data.map((pokemon, index) => (
+              <Card
+                name={pokemon?.name}
+                {...(index === data.length - 1 ? { ref } : {})}
+              />
+            ))
+          ) : (
+            <p>Não Achamos nenhum pokemon</p>
+          )}
         </ListContent>
       </ListContainer>
     </>
